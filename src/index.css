@@ -1,0 +1,107 @@
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-image: url(./assets/jungleBackground.jpg);
+  background-repeat: repeat;
+  background-size:100%;
+  justify-content: center;
+  text-align: center;
+  background-color: papayawhip;
+  margin-top: 5rem;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  min-width: 100vw;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: green;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+#buttonPlus{
+  margin-right: 2rem;
+}
+#buttonCLose{
+  color: red;
+}
+
+
+button:hover {
+  background-color: #646cff;
+}
+
+#box {
+  display: inline-block;
+  border: solid;
+  border-color: darkgreen;
+  border-radius: 1%;
+  background-color: whitesmoke;
+  min-width: 5rem;
+  min-height: 20rem;
+  padding: 1rem;
+  margin: 3rem;
+  text-align: justify;
+}
+img{
+  display: block;
+  justify-content: center;
+  max-width: 10rem;
+  align-items: center;
+
+}
+
+footer{
+  color: white;
+  padding-top: 15rem;
+}
+
+header{
+  color:white;
+  font-size: xx-large;
+  
+}
+.container{
+  margin-top: 10rem;
+ padding: 1rem;
+  width:10rem;
+  text-align: center;
+  justify-content: center;
+  background-color: grey;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
