@@ -1,5 +1,3 @@
-
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -12,7 +10,7 @@ a:hover {
 body {
   background-image: url(./assets/jungleBackground.jpg);
   background-repeat: repeat;
-  background-size:100%;
+  background-size: 100%;
   justify-content: center;
   text-align: center;
   background-color: papayawhip;
@@ -22,7 +20,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   min-width: 100vw;
-
 }
 
 h1 {
@@ -30,28 +27,42 @@ h1 {
   line-height: 1.1;
 }
 
+p {
+  text-transform: uppercase;
+  color: wheat;
+}
+
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid green;
   display: inline-block;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
   background-color: green;
   cursor: pointer;
-  transition: border-color 0.25s;
+  color: wheat;
 }
-#buttonPlus{
+
+#buttonMinus,
+#buttonPlus img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#buttonPlus {
   margin-right: 2rem;
 }
-#buttonCLose{
+#buttonCLose {
   color: red;
 }
 
-
 button:hover {
-  background-color: #646cff;
+  background-color: rgb(100, 53, 53);
 }
 
 #box {
@@ -66,31 +77,29 @@ button:hover {
   margin: 3rem;
   text-align: justify;
 }
-img{
+img {
   display: block;
-  justify-content: center;
   max-width: 10rem;
   align-items: center;
-
 }
 
-footer{
+footer {
   color: white;
   padding-top: 15rem;
 }
 
-header{
-  color:white;
+header {
+  color: white;
   font-size: xx-large;
-  
 }
-.container{
-  margin-top: 10rem;
- padding: 1rem;
-  width:10rem;
+.container {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 10rem;
   text-align: center;
   justify-content: center;
   background-color: grey;
+  border-radius: 5%;
 }
 
 @media (prefers-color-scheme: light) {
