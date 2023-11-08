@@ -11,7 +11,7 @@ function App() {
   );
 
   const removeHandler = (name) => {
-    const updatedArray = animals.filter((animals) => animals.name !== name);
+    const updatedArray = animalsData.filter((animals) => animals.name !== name);
     setAnimals(updatedArray);
   };
 
