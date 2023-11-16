@@ -16,20 +16,49 @@ body {
   background-color: papayawhip;
   margin-top: 5rem;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   min-width: 100vw;
 }
 
+input {
+  display: inline-block;
+  width: 20rem;
+  text-align: center;
+}
+
 h1 {
-  font-size: 3.2em;
+  color: whitesmoke;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 2rem;
+}
+
+#animalName {
+  display: block;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: green;
+  margin: 1rem;
+  font-size: x-large;
   line-height: 1.1;
 }
 
-p {
-  text-transform: uppercase;
+.box {
+  display: inline-block;
+  border: solid;
+  border-color: green;
+  background-color: whitesmoke;
+  min-width: 5rem;
+  padding: 1rem;
+  margin: 3rem;
+  text-align: justify;
+}
+
+.buttons p {
   color: wheat;
+  display: inline-block;
 }
 
 button {
@@ -37,7 +66,6 @@ button {
   height: 50px;
   border-radius: 50%;
   border: 2px solid green;
-  display: inline-block;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-family: inherit;
@@ -45,41 +73,40 @@ button {
   cursor: pointer;
   color: wheat;
 }
-
-#buttonMinus,
-#buttonPlus img {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.buttons button {
+  display: inline-flex;
   justify-content: center;
+  align-items: center;
 }
 
-#buttonPlus {
-  margin-right: 2rem;
+#closing {
+  display: none;
+  justify-content: right;
 }
-#buttonCLose {
-  color: red;
+
+#likeHeart {
+  color: wheat;
 }
 
 button:hover {
-  background-color: rgb(100, 53, 53);
+  background-color: rgb(184, 18, 18);
 }
 
-#box {
-  display: inline-block;
-  border: solid;
-  border-color: darkgreen;
-  border-radius: 1%;
-  background-color: whitesmoke;
-  min-width: 5rem;
-  min-height: 20rem;
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
   padding: 1rem;
-  margin: 3rem;
-  text-align: justify;
+  text-align: center;
+  background-color: rgb(12, 40, 12);
+  border-radius: 5%;
 }
+
 img {
-  display: block;
-  max-width: 10rem;
+  border-radius: 5%;
+  display: flex;
+  margin: auto;
+  max-width: 14rem;
   align-items: center;
 }
 
@@ -88,18 +115,8 @@ footer {
   padding-top: 15rem;
 }
 
-header {
-  color: white;
-  font-size: xx-large;
-}
-.container {
-  margin-top: 2rem;
-  padding: 1rem;
-  width: 10rem;
-  text-align: center;
-  justify-content: center;
-  background-color: grey;
-  border-radius: 5%;
+#heart_broken {
+  color: red;
 }
 
 @media (prefers-color-scheme: light) {

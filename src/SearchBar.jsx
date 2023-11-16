@@ -3,6 +3,8 @@ const SearchBar = (props) => {
         <div className="searchBar">
             <input type="text" id="myInput" placeholder="Search your favourite animal" />
         </div>
+
+
     );
 };
 

@@ -163,4 +163,3 @@ export const birds = [
   { "name": "Cormorant", "likes": 0 },
   { "name": "Hawk", "likes": 0 }
 ];
-
