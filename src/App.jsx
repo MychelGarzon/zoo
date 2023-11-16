@@ -1,8 +1,13 @@
 import { useState } from 'react'
 import Card from './Card.jsx'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
+import Navigation from './components/Navigation.jsx'
 import SearchBar from './SearchBar.jsx'
+import Root from './Root.jsx'
+import Birds from './routes/Birds.jsx'
+import Animals from './routes/Animals.jsx'
+import About from './routes/About.jsx'
 import { animals } from './animalsList.js'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
@@ -34,13 +39,19 @@ function App() {
     setAnimals(updatedArray);
   };
 
+  const router = createBrowserRouter([
+    { path: '/', element: <Root /> },
+    { path: '/birds', element: <Birds /> },
+    { path: '/about', element: <About /> },
+    { path: '/animals', element: <Animals /> }
 
+  ])
 
 
   return (
     <>
-      <Header />
-      <input type="text" onChange={searchHandler} placeholder='Search your favourite animal' />
+      <RouterProvider router={router} />
+      {/* <input type="text" onChange={searchHandler} placeholder='Search your favourite animal' />
       <div className="cards">
         {animalsData.filter(animal => animal.name.toLowerCase().includes(search.toLowerCase())).map((animal) => (
           <Card key={animal.name}
@@ -49,7 +60,7 @@ function App() {
             addLike={() => likeHandler(animal.name, 'add')}
             removeLike={() => likeHandler(animal.name, 'remove')}
           />))}
-      </div>
+      </div> */}
 
       <Footer footer="@Copyright Mychel Garzon 2023" />
 
