@@ -62,7 +62,6 @@ function App() {
           />))}
       </div> */}
 
-      <Footer footer="@Copyright Mychel Garzon 2023" />
 
     </>
 

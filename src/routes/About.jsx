@@ -1,7 +1,8 @@
+import Navigation from '../components/Navigation'
 const About = () => {
     return (
         <>
-            <h1>This is About</h1>
+            <Navigation></Navigation>
         </>
 
     )

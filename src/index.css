@@ -4,7 +4,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: brown;
 }
 
 body {
@@ -16,9 +16,52 @@ body {
   background-color: papayawhip;
   margin-top: 5rem;
   display: flex;
-  min-width: 320px;
+  margin: 0;
   min-height: 100vh;
   min-width: 100vw;
+}
+
+nav {
+  background-color: rgb(8, 68, 8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  min-width: 100vw;
+  height: 4rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav h3 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2rem;
+}
+
+.imagesFrontPage {
+  text-align: center;
+  display: flex;
+}
+
+.imagesFrontPage img {
+  width: 40rem;
+  padding: 5rem;
+  margin: 5rem auto 0;
+}
+.imagesFrontPage h2 {
+  color: whitesmoke;
+  font-size: larger;
 }
 
 input {
@@ -39,7 +82,7 @@ h1 {
   margin: auto;
   text-align: center;
   text-transform: uppercase;
-  color: green;
+  color: rgb(8, 68, 8);
   margin: 1rem;
   font-size: x-large;
   line-height: 1.1;
@@ -48,7 +91,7 @@ h1 {
 .box {
   display: inline-block;
   border: solid;
-  border-color: green;
+  border-color: rgb(8, 68, 8);
   background-color: whitesmoke;
   min-width: 5rem;
   padding: 1rem;
@@ -65,11 +108,11 @@ button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid green;
+  border: 2px solid rgb(8, 68, 8);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-family: inherit;
-  background-color: green;
+  background-color: rgb(8, 68, 8);
   cursor: pointer;
   color: wheat;
 }
@@ -80,10 +123,8 @@ button {
 }
 
 #closing {
-  display: none;
-  justify-content: right;
+  display: flex;
 }
-
 #likeHeart {
   color: wheat;
 }
@@ -102,7 +143,7 @@ button:hover {
   border-radius: 5%;
 }
 
-img {
+.box img {
   border-radius: 5%;
   display: flex;
   margin: auto;
@@ -112,7 +153,7 @@ img {
 
 footer {
   color: white;
-  padding-top: 15rem;
+  padding-top: 10rem;
 }
 
 #heart_broken {

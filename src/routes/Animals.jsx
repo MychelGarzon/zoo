@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import Card from '../Card.jsx'
 import Header from '../components/Header.jsx';
+import Navigation from '../components/Navigation.jsx';
+import Footer from '../components/Footer.jsx'
 import { animals } from '../animalsList.js'
+
 const Animals = () => {
     const [animalsData, setAnimals] = useState(
         animals);
@@ -32,8 +35,9 @@ const Animals = () => {
 
     return (
         <>
-            <h1>This is Animals</h1>
-            <Header />
+            <Navigation />
+
+            <h1>Animals</h1>
             <input type="text" onChange={searchHandler} placeholder='Search your favourite animal' />
             <div className="cards">
                 {animalsData.filter(animal => animal.name.toLowerCase().includes(search.toLowerCase())).map((animal) => (
@@ -44,12 +48,9 @@ const Animals = () => {
                         removeLike={() => likeHandler(animal.name, 'remove')}
                     />))}
             </div>
-
-
-
+            <Footer />
 
         </>
-
     )
 
 }

@@ -5,8 +5,8 @@ const Card = ({ click, name, likes, removeLike, addLike }) => {
 
         <div className="box">
             <button id="closing" onClick={click}>x</button>
-
             <img src={`https://source.unsplash.com/400x400/?${name}`} alt="picture" />
+
             <p id="animalName">{name}</p>
             <div className="container">
 
