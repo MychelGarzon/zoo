@@ -36,8 +36,11 @@ nav ul {
 }
 
 nav li {
-  display: inline;
+  display: inline-block;
   margin-right: 20px;
+}
+nav h2 {
+  margin-right: 0rem;
 }
 
 nav h3 {
@@ -46,7 +49,7 @@ nav h3 {
   color: white;
   font-weight: bold;
   font-size: 20px;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .imagesFrontPage {
@@ -55,9 +58,11 @@ nav h3 {
 }
 
 .imagesFrontPage img {
-  width: 40rem;
-  padding: 5rem;
-  margin: 5rem auto 0;
+  display: flex;
+
+  width: 30rem;
+  padding: 6rem;
+  margin: 4rem auto 0;
 }
 .imagesFrontPage h2 {
   color: whitesmoke;
@@ -67,7 +72,9 @@ nav h3 {
 input {
   display: inline-block;
   width: 20rem;
+  height: 2rem;
   text-align: center;
+  background-color: whitesmoke;
 }
 
 h1 {
@@ -115,7 +122,9 @@ button {
   background-color: rgb(8, 68, 8);
   cursor: pointer;
   color: wheat;
+  margin: 1rem;
 }
+
 .buttons button {
   display: inline-flex;
   justify-content: center;
@@ -123,8 +132,14 @@ button {
 }
 
 #closing {
-  display: flex;
+  position: absolute;
+  background-color: wheat;
+  color: rgb(8, 68, 8);
+  margin-left: 160px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
+
 #likeHeart {
   color: wheat;
 }
@@ -134,7 +149,7 @@ button:hover {
 }
 
 .container {
-  display: flex;
+  display: relative;
   justify-content: center;
   margin-top: 1rem;
   padding: 1rem;
