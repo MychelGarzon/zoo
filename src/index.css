@@ -1,0 +1,173 @@
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: brown;
+}
+
+body {
+  background-image: url(./assets/jungleBackground.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem;
+  display: flex;
+  margin: 0;
+  height: 100vh;
+}
+
+nav {
+  background-color: rgb(8, 68, 8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  min-width: 100vw;
+  height: 4rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav h2 {
+  margin-right: 0rem;
+}
+
+nav h3 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 1rem;
+}
+
+.imagesFrontPage {
+  text-align: center;
+  display: flex;
+}
+
+.imagesFrontPage img {
+  display: flex;
+  width: 30rem;
+  padding: 1rem;
+  margin: 4rem auto 0;
+}
+.imagesFrontPage h2 {
+  color: whitesmoke;
+  font-size: larger;
+}
+
+input {
+  display: inline-block;
+  width: 20rem;
+  height: 2rem;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin: 2rem;
+}
+
+#animalName {
+  display: block;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(8, 68, 8);
+  margin: 1rem;
+  font-size: x-large;
+  line-height: 1.1;
+}
+
+.box {
+  display: inline-block;
+  border: solid;
+  border-color: rgb(8, 68, 8);
+  background-color: papayawhip;
+  min-width: 5rem;
+  padding: 1rem;
+  margin: 3rem;
+  text-align: justify;
+}
+
+.buttons p {
+  color: wheat;
+  display: inline-block;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgb(8, 68, 8);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: rgb(8, 68, 8);
+  cursor: pointer;
+  color: wheat;
+  margin: 1rem;
+}
+
+.buttons button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#closing {
+  position: absolute;
+  background-color: transparent;
+  color: rgb(8, 68, 8);
+  margin-left: 160px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#likeHeart {
+  color: wheat;
+}
+
+button:hover {
+  background-color: rgb(184, 18, 18);
+}
+
+.container {
+  display: relative;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(12, 40, 12);
+  border-radius: 5%;
+}
+
+.box img {
+  border-radius: 5%;
+  display: flex;
+  margin: auto;
+  max-width: 14rem;
+  align-items: center;
+}
+
+footer {
+  color: white;
+  padding-top: 10rem;
+}
+
+#heart_broken {
+  color: red;
+}
