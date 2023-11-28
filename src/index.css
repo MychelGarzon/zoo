@@ -197,7 +197,6 @@ button:hover {
 /*Footer*/
 
 footer {
-  bottom: 0;
   width: 100%;
   text-align: center;
   color: wheat;
@@ -214,6 +213,7 @@ a {
 
 h4 {
   text-transform: capitalize;
+  color: wheat;
 }
 
 @media screen and (max-width: 1960px) {
@@ -221,6 +221,6 @@ h4 {
     background-size: cover;
   }
   .imagesFrontPage img {
-    max-width: 30rem;
+    max-width: 20rem;
   }
 }
