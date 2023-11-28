@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
+import Navigation from '../components/Navigation';
 const SinglePage = ({ zoo }) => {
     let urlParams = useParams();
     const navigate = useNavigate();
@@ -9,11 +10,11 @@ const SinglePage = ({ zoo }) => {
 
     return (
         <>
-            <div>
-                <img src={`https://source.unsplash.com/400x400/?${urlName},${category}`} alt="picture" />
+            <div className='singlePageInfo'>
                 <h2>{data.name}</h2>
+                <img src={`https://source.unsplash.com/600x600/?${urlName},${category}`} alt="picture" />
                 <p>Likes: {data.likes}</p>
-                <button onClick={() => navigate(-1)}>Go back</button>
+                <button onClick={() => navigate(-1)}>Return</button>
             </div>
         </>
     )

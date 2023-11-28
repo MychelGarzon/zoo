@@ -1,8 +1,9 @@
 import Card from '../components/Card'
-import SearchBar from '../components/SearchBar';
 import { useParams } from "react-router-dom";
+import Navigation from '../components/Navigation';
+import SearchBar from '../components/SearchBar';
 
-function CategoryPage({ zoo, removeLike, addLike, search, removeHandler }) {
+function CategoryPage({ zoo, removeLike, addLike, search, removeHandler, searchHandler, cleanHandler }) {
     let urlParams = useParams();
     let category = urlParams.category;
 
@@ -12,6 +13,8 @@ function CategoryPage({ zoo, removeLike, addLike, search, removeHandler }) {
 
     return (
         <>
+            <Navigation />
+            <SearchBar onChange={searchHandler} cleanHandler={cleanHandler} />
             {filteredData.map((el) => (
                 <Card
                     key={el.name}

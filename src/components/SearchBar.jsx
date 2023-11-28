@@ -1,6 +1,6 @@
-const SearchBar = ({ onChange, searchHandler }) => {
+const SearchBar = ({ onChange }) => {
     return (
-        <input type="text" onChange={searchHandler} placeholder='Search your favourite animal' />
+        <input type="text" onChange={onChange} placeholder='Search your favourite animal' />
     );
 };
 

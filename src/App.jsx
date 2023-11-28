@@ -1,23 +1,26 @@
-import { useState } from 'react'
-import { animals, birds, fishes, insects } from './animalsList.js'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Root from './routes/Root.jsx'
-import SinglePage from './routes/SinglePage.jsx'
-import Category from './routes/Category.jsx'
-import Home from './routes/Home.jsx'
-import About from './routes/About.jsx'
-import ErrorPage from './routes/ErrorPage.jsx'
+import { useState } from 'react';
+import { animals, birds, fishes, insects } from './animalsList.js';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Root from './routes/Root.jsx';
+import SinglePage from './routes/SinglePage.jsx';
+import Category from './routes/Category.jsx';
+import Home from './routes/Home.jsx';
+import About from './routes/About.jsx';
+import ErrorPage from './routes/ErrorPage.jsx';
 
 function App() {
   const [search, setSearch] = useState('');
   const [zoo, setZoo] = useState({
-    animals: animals, birds: birds, fishes: fishes, insects: insects
+    animals: animals,
+    birds: birds,
+    fishes: fishes,
+    insects: insects,
   });
 
   function removeHandler(name, category) {
     const updatedArray = zoo[category].filter((el) => el.name !== name);
     setZoo({ ...zoo, [category]: updatedArray });
-  };
+  }
 
   function likeHandler(name, action, category) {
     const updatedArray = zoo[category].map((el) => {
@@ -29,32 +32,32 @@ function App() {
     setZoo({ ...zoo, [category]: updatedArray });
   }
 
-
   const searchHandler = (event) => setSearch(event.target.value);
-
 
   const cleanHandler = (event) => {
     setSearch('');
-    event.target.reset()
+    event.target.reset();
   };
-
 
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Root searchHandler={searchHandler} cleanHandler={cleanHandler} />,
+      element: <Root />,
       errorElement: <ErrorPage />,
       children: [
         { path: '/', element: <Home /> },
         {
-          path: ":category",
+          path: ':category',
           element: (
             <Category
               zoo={zoo}
               search={search}
               removeHandler={removeHandler}
               addLike={likeHandler}
-              removeLike={likeHandler} />
+              removeLike={likeHandler}
+              searchHandler={searchHandler}
+              cleanHandler={cleanHandler}
+            />
           ),
         },
 
@@ -68,7 +71,7 @@ function App() {
     <>
       <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
 export default App;

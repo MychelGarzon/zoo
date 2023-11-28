@@ -8,7 +8,6 @@ import SearchBar from "../components/SearchBar";
 const Home = () => {
     return (
         <>
-            <Navigation />
             <div className="imagesFrontPage">
                 <Link to="/animals"><img src="src/assets/jaguar.jpg" alt="picture" /><h2>ANIMALS</h2></Link>
                 <Link to="/birds"> <img src="src/assets/guacamayo.jpg" /><h2>BIRDS</h2></Link>
@@ -18,7 +17,7 @@ const Home = () => {
             </div >
 
             <Outlet />
-            <Footer />
+
         </>
     );
 };
