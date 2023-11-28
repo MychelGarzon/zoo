@@ -1,25 +1,16 @@
-a {
-  font-weight: 500;
-  color: papayawhip;
-  text-decoration: none;
-}
-
-a:hover {
-  color: brown;
-}
-
 body {
+  font-family: 'Zen Tokyo Zoo';
   background-image: url(./assets/jungleBackground.jpg);
   background-size: 100%;
   background-attachment: fixed;
   justify-content: center;
   text-align: center;
   margin-top: 5rem;
-  display: flex;
+  height: auto;
   margin: 0;
-  height: 100vh;
 }
 
+/*This is the Nav*/
 nav {
   background-color: rgb(8, 68, 8);
   color: white;
@@ -51,20 +42,21 @@ nav h3 {
   margin: 1rem;
 }
 
-.imagesFrontPage {
-  display: auto;
-}
+/*Front Page*/
 
 .imagesFrontPage img {
-  display: block;
+  display: inline-block;
   width: 30rem;
   padding: 4rem;
   margin: 1rem;
 }
+
 .imagesFrontPage h2 {
   color: whitesmoke;
   font-size: larger;
 }
+
+/* Search Bar */
 
 input {
   display: block;
@@ -82,15 +74,51 @@ h1 {
   margin: 2rem;
 }
 
+/* Card */
+
 .box {
   display: inline-block;
   border: solid;
   border-color: rgb(8, 68, 8);
   background-color: papayawhip;
-  max-width: 16rem;
+  width: 16rem;
   padding: 1rem;
   margin: 2rem;
   text-align: justify;
+  overflow: hidden;
+}
+
+#animalName {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(8, 68, 8);
+  font-size: large;
+}
+
+#closing {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(8, 68, 8);
+  cursor: pointer;
+}
+
+.container {
+  display: relative;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(12, 40, 12);
+  border-radius: 5%;
+}
+
+.box img {
+  border-radius: 5%;
+  display: inline-block;
+  margin: auto;
+  width: 16rem;
+  align-items: center;
 }
 
 .buttons p {
@@ -117,59 +145,20 @@ button {
   justify-content: center;
   align-items: center;
 }
-
-#animalName {
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgb(8, 68, 8);
-  margin: 1rem;
-  font-size: large;
-  line-height: 1.1;
-}
-
-#closing {
-  background-color: transparent;
-  border-color: transparent;
-  color: rgb(8, 68, 8);
-  cursor: pointer;
-}
+/* Card Header*/
 
 #likeHeart {
   color: wheat;
+}
+#heart_broken {
+  color: red;
 }
 
 button:hover {
   background-color: brown;
 }
 
-.container {
-  display: relative;
-  justify-content: center;
-  margin-top: 1rem;
-  padding: 1rem;
-  text-align: center;
-  background-color: rgb(12, 40, 12);
-  border-radius: 5%;
-}
-
-.box img {
-  border-radius: 5%;
-  display: flex;
-  margin: auto;
-  max-width: 14rem;
-  align-items: center;
-}
-
-footer {
-  color: white;
-  padding-top: 10rem;
-}
-
-#heart_broken {
-  color: red;
-}
-
+/* Single Page*/
 .singlePageInfo {
   display: inline-block;
   align-items: center;
@@ -180,4 +169,30 @@ footer {
 .singlePageInfo h2 {
   color: papayawhip;
   text-transform: uppercase;
+}
+
+/*Footer*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+a:hover {
+  color: brown;
+}
+
+a {
+  font-weight: 500;
+  color: papayawhip;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1960px) {
+  body {
+    background-size: cover;
+  }
 }

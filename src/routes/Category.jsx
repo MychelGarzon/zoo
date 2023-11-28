@@ -14,7 +14,10 @@ function CategoryPage({ zoo, removeLike, addLike, search, removeHandler, searchH
     return (
         <>
             <Navigation />
-            <SearchBar onChange={searchHandler} cleanHandler={cleanHandler} />
+            <SearchBar
+                onChange={searchHandler}
+                cleanHandler={cleanHandler}
+            />
             {filteredData.map((el) => (
                 <Card
                     key={el.name}
