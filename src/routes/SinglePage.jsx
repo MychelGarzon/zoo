@@ -10,6 +10,7 @@ const SinglePage = ({ zoo }) => {
 
     return (
         <>
+            <Navigation />
             <div className='singlePageInfo'>
                 <h2>{data.name}</h2>
                 <img src={`https://source.unsplash.com/600x600/?${urlName},${category}`} alt="picture" />
