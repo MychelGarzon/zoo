@@ -15,10 +15,9 @@ nav {
   color: wheat;
   padding: 10px;
   text-align: center;
-  min-width: 100vw;
   height: 4rem;
   position: sticky;
-  overflow: auto;
+  overflow: hidden;
 }
 
 nav ul {
@@ -59,8 +58,8 @@ nav img {
 }
 
 .imagesFrontPage h2 {
-  color: whitesmoke;
-  font-size: larger;
+  color: wheat;
+  font-size: x-large;
   text-align: center;
 }
 
@@ -198,13 +197,11 @@ button:hover {
 /*Footer*/
 
 footer {
-  position: fixed;
   bottom: 0;
-  color: white;
+  width: 100%;
   text-align: center;
-  padding: 20px 20px;
+  color: wheat;
 }
-
 a:hover {
   color: brown;
 }
@@ -213,6 +210,10 @@ a {
   font-weight: 500;
   color: papayawhip;
   text-decoration: none;
+}
+
+h4 {
+  text-transform: capitalize;
 }
 
 @media screen and (max-width: 1960px) {

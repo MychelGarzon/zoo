@@ -31,7 +31,7 @@ const Card = ({ urlName, likes, removeLike, addLike, removeHandler, category }) 
                         </button>
                     </div>
                 </div>
-                <Link to={urlName.toLowerCase()}><h4>See More</h4></Link>
+                <Link to={urlName.toLowerCase()}><h4>See More About {urlName}</h4></Link>
             </div>
         </div>
     );
