@@ -13,13 +13,11 @@ body {
 nav {
   background-color: rgb(8, 68, 8);
   color: wheat;
-  padding: 10px;
   text-align: center;
-  height: 4rem;
   position: sticky;
+  top: 0;
   overflow: hidden;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
