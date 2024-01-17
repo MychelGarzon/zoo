@@ -1,8 +1,9 @@
 body {
   font-family: 'Zen Tokyo Zoo';
   background-image: url(./assets/jungleBackground.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   justify-content: center;
   text-align: center;
   margin-top: 5rem;
@@ -191,6 +192,18 @@ button:hover {
   height: 4rem;
   border-radius: 0;
 }
+/*About page*/
+.about h3 {
+  color: wheat;
+  font-size: xx-large;
+}
+.about h4 {
+  display: block;
+  font-size: 2rem;
+  text-align: justify;
+  margin: 2rem;
+  text-transform: none;
+}
 
 /*Footer*/
 
@@ -214,11 +227,17 @@ h4 {
   color: wheat;
 }
 
-@media screen and (max-width: 1960px) {
-  body {
-    background-size: cover;
-  }
+@media screen and (max-width: 1800px) {
   .imagesFrontPage img {
-    max-width: 20rem;
+    max-width: 27rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .imagesFrontPage img {
+    max-width: 18rem;
+  }
+  .singlePageInfo img {
+    max-width: 18rem;
   }
 }

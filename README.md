@@ -1,9 +1,19 @@
-# React + Vite
+# About Zoo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+With the Zoo application, you can view photos of various animals categorized as Animals, Birds, Fish, and Insects. You can navigate through the application, select your favorite animal, give it a heart, or remove it from the list. This React application defines functions for removing an animal from a zoo, updating the likes of an animal, handling search input, resetting the search input, and configuring routes for a web application.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# zoo
+## Project Requirements
+
+The following requirements are to be implemented in this React project:
+
+- **Loop**
+- **Spread operator**
+- **One function for buttons + and -**
+- **For the search re-rendering, search key in the state**
+- **Params**
+- **One state for zoo**
+- **Header cleanHandler**
+- **About category**
+- **Hook ErrorPage**
